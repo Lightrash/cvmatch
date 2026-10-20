@@ -22,6 +22,7 @@
 ## Відтворення в одну команду
 ```bash
 git clone <URL цього репозиторію> && cd cvmatch
+dvc pull || ./scripts/get_data.sh  # резюме під контролем DVC (або завантаження з репозиторію авторів датасету)
 docker compose up --build          # MLflow UI: http://localhost:5000
 ```
 Без Docker:
