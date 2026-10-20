@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Hybrid CV–Vacancy Matching with Semantic Vectors and Rules"
+version: 1.0.0
+date-released: 2026-10-20
+authors:
+  - family-names: Kuzmuk
+    given-names: Vladyslav
+    affiliation: Khmelnytskyi National University
+license: MIT

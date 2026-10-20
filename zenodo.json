@@ -1,0 +1,15 @@
+{
+  "title": "Hybrid CV–Vacancy Matching with Semantic Vectors and Rules: Reproducible Benchmark Package",
+  "upload_type": "software",
+  "description": "Повний відтворюваний пакет обчислювального експерименту: код гібридного методу оцінювання відповідності резюме вакансії (семантичні вектори + детерміновані правила), Docker-контейнер, трекінг MLflow, ноутбуки статистичного аналізу. Дані: Vanetik & Kogan (2023), GPL-3.0.",
+  "creators": [
+    {"name": "Kuzmuk, Vladyslav", "affiliation": "Khmelnytskyi National University", "orcid": "0000-0000-0000-0000"}
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": ["reproducibility", "resume matching", "person-job fit", "semantic similarity", "docker", "mlflow", "open science"],
+  "related_identifiers": [
+    {"identifier": "10.3390/info14080468", "relation": "isDerivedFrom", "scheme": "doi"}
+  ],
+  "version": "1.0.0"
+}

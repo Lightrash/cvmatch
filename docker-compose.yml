@@ -1,0 +1,14 @@
+# Одна команда: docker compose up --build
+services:
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v3.17.1
+    command: mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri sqlite:////mlflow/mlflow.db --default-artifact-root /mlflow/artifacts --serve-artifacts
+    ports: ["5000:5000"]
+    volumes: ["./mlflow-data:/mlflow"]
+  experiment:
+    build: .
+    image: cv-matching-experiment:v1.0.0
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+    depends_on: [mlflow]
+    volumes: ["./results:/app/results"]

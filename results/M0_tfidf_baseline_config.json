@@ -1,0 +1,5 @@
+{
+ "kind": "tfidf",
+ "use_aspects": false,
+ "use_rules": false
+}
