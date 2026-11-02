@@ -21,7 +21,7 @@
 
 ## Відтворення в одну команду
 ```bash
-git clone <URL цього репозиторію> && cd cvmatch
+git clone https://github.com/Lightrash/cvmatch.git && cd cvmatch
 dvc pull || ./scripts/get_data.sh  # резюме під контролем DVC (або завантаження з репозиторію авторів датасету)
 docker compose up --build          # MLflow UI: http://localhost:5000
 ```
