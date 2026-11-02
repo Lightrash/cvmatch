@@ -24,7 +24,7 @@ def load_cvs(raw="data/raw"):
 
 def load_annotations(raw="data/raw"):
     """Повертає DataFrame: cv_id, annotator, vac_idx, position (1 = найкраща), valid.
-    Масив анотатора — впорядкований список номерів вакансій від найкращої до найгіршої.
+    Масив анотатора – впорядкований список номерів вакансій від найкращої до найгіршої.
     Масиви з дублікатами (невалідні перестановки) позначаються valid=False."""
     txt = open(os.path.join(raw, "annotations-for-the-first-30-vacancies.txt"), encoding="utf-8").read()
     out = []
